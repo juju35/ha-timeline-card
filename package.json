@@ -1,0 +1,27 @@
+{
+  "name": "ha-timeline-card",
+  "version": "1.0.0",
+  "description": "A Lovelace card for Home Assistant showing what happened at home today: a readable logbook grouped by time of day.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juju35/ha-timeline-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juju35/ha-timeline-card/issues"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && node --check dist/ha-timeline-card.js",
+    "test": "node --test test/*.test.mjs",
+    "screenshots": "npm run build && node scripts/screenshots/timeline.mjs && node scripts/screenshots/animations.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mdi/js": "^7.4.47",
+    "acorn": "^8.19.0",
+    "css-tree": "^3.2.1",
+    "playwright": "^1.64.1"
+  }
+}
